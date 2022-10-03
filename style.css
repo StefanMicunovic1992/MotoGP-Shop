@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(252, 249, 198, 0.8);
+}
+
+
+i{
+    font-size: 2rem;
+    color: black;
+}
+
+
+.logo{
+    width: 20%;
+}
+
+#all {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95vh;
+}
+#all a {
+    text-decoration: none;
+    color: black;
+    padding: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 6px 21px 5px rgba(0,0,0,0.72);
+}
+
+
+#all a:nth-child(1):hover{
+    background-image: url(img/Hoodie2.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#all a:nth-child(2):hover{
+    background-image: url(img/t-shirt1.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#all a:nth-child(3):hover{
+    background-image: url(img/hat1.webp);
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+#productHoodies, #productTShirt, #productHats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    box-shadow: 5px 6px 21px 5px rgba(0,0,0,0.72);
+    padding: 10px;
+}
+
+.btnAdd{
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 50%;
+    transition: 0.7s;
+}
+
+
+.btnAdd:hover {
+    width: 80%;
+    color: white;
+    background-color: #333;
+}
+
+.images{
+    width: 50%;
+}
+
+
+#finalCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ispisKorpa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    width: 1000px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ispisKorpa .images {
+    width: 5%;
+}
+
+.ispisKorpa .name {
+    width: 250px;
+}
+
+.ispisKorpa .remove{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#final button{
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#cart {
+    display: none;
+}
+
+#cartIcon{
+    display: none;
+}
+
+#order{
+    width: 15%;
+    transition: 0.7s;
+}
+#order:hover {
+    width: 25%;
+    color: white;
+    background-color: #333;
+}
